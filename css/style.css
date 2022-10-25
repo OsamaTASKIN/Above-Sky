@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+/* font style from google fonts */
+
+body{
+font-family:var(--ff-primary);
+font-weight: 400;
+font-size: 1.125rem;
+line-height: 1.6;
+}
+
+.navbar-res{
+    position: fixed;
+    width: 100%;
+}
+
+
+nav{
+    background-color:#005792;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-top:20px ;
+
+}
+
+nav ul li a{
+    color:white;
+    font-size: large;
+    padding: 20px;  
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;  
+}
+
+a:active,a:hover{
+    color: #00E0FF;
+    transition: 0.9s;
+    transition-timing-function: ease-in-out;
+    font-size: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+   float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Media Queries for Navbar */
+
+@media (max-width:752px){
+    label.logo{
+        font-size: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    @media (max-width:804px){
+       .checkbtn{
+        display: block;
+       }
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 78vh;
+        background-color:#006998 ;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .8s;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+
+
+    nav ul li a{
+        font-size: 20px;
+
+    }
+
+    a:hover,a.active{
+        background: none;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+   
+ 
+}
+
+.visit-count{
+    position: relative;
+}
+
+.welcome{
+    font-size: 50px;
+}
+
+/* centering image in guidelines section */
+
+/* .image1{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+} */
+
+/* Creating Utility classes */
+
+:root{
+    --clr-primary-300: #E8F9FD;
+    --clr-primary-400: #A5C9CA;
+    --clr-primary-500: #ffffff;
+    --clr-primary-600: #3C2317;
+
+    --ff-primary:'Roboto' , sans-serif;
+    --ff-accent: 'Playfair Display',serif;
+}
+
+/* Making each Headings specific values for better code */
+
+body,
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1,h2,h3{
+    line-height: 1;
+    font-family: var(--ff-accent);
+    font-weight: 600;
+    color: var(--clr-primary-600);
+}
+
+h1,h2,h3 p{
+    margin-bottom: 1em;
+}
+
+
+.top-image{
+    padding: 0;
+}
+
+header,section{
+
+    padding:4rem 0;
+}
+
+@media (min-width:40em){
+    header,section p{
+        padding: 2em 0;
+    }
+}
+
+.history-img{
+    padding: 2em 0;
+    width: 50%;
+}
+
+.container{
+    margin-inline: auto;
+    width:min(90%, 70.5rem);
+}
+
+.split{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container--narrow{
+    max-width: 30rem;
+}
+
+.header{
+    background-color: var(--clr-primary-300);
+}
+
+.title-tech{
+    padding-left: 3.5em;
+    padding-top: 2em;
+}
+
+.trophy-emoji:hover{
+    font-size: 1.1em;
+    border: 2px solid gold;
+    
+}
+
+/* hover effects */
+
+.hz-text:hover{
+    background-color: #F8C4B4;
+    transition: all 0.6s;
+    font-size: 1.1em;
+}
+
+.gd-hv:hover{
+    background-color: #F8FFDB;
+    transition: all 0.6s;
+    font-size: 1.1em;
+}
+
+/* .techniques{
+    background-color: var(--clr-primary-400);
+} */
+
+.tips{
+    background-color: var(--clr-primary-500);
+}
+
+.tips-2{
+    background-color: var(--clr-primary-500);
+}
+
+/* Media Queries */
+
+@media (min-width:40em){
+
+
+    .split{
+        flex-direction: row;
+    }
+
+    .split-1{
+        flex-direction: column;
+    }
+
+    .split > *{
+        flex-basis: 100%;
+    }
+
+    .split > * + *{
+        margin-left: 2em;
+    }
+
+    iframe{
+        margin-left: 1em;
+    }
+}
+
+/* Techniques-section */
+
+.diff-tech{
+    margin-bottom: 2em;
+}
+
+/* Youtube Video and Gallery */
+
+.youtube-title{
+    font-weight: 700;
+}
+
+/* Footer Styling */
+
